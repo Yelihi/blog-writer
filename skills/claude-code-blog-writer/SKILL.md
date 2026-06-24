@@ -15,7 +15,7 @@ This skill is a thin operating guide for the Blog Writer CLI. Do not duplicate C
 - If either style file is absent or stale, run:
 
 ```bash
-blog-writer profile
+node ./bin/blog-writer.js profile
 ```
 
 ## Prepare Inputs
@@ -39,12 +39,12 @@ If inline placement is not convenient, use image notes:
 ## CLI Flow
 
 ```bash
-blog-writer profile
-blog-writer draft inputs/draft.md
-blog-writer cover-prompt outputs/<slug>
+node ./bin/blog-writer.js profile
+node ./bin/blog-writer.js draft inputs/draft.md
+node ./bin/blog-writer.js cover-prompt outputs/<slug>
 ```
 
-If the generated slug is not obvious, read the `blog-writer draft` output and use that path for the cover prompt command.
+If the generated slug is not obvious, read the `draft` output and use that path for the cover prompt command. Use `blog-writer ...` only after `npm link` or another install step has put the package bin on PATH.
 
 ## Verify Outputs
 

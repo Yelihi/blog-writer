@@ -71,9 +71,10 @@ test('README explains overview and real user workflow', async () => {
 
   assert.match(readme, /## 개요/);
   assert.match(readme, /## 실제 사용자 사용 방법/);
-  assert.match(readme, /blog-writer profile/);
-  assert.match(readme, /blog-writer draft inputs\/draft\.md/);
-  assert.match(readme, /blog-writer cover-prompt outputs\/<slug>/);
+  assert.match(readme, /node \.\/bin\/blog-writer\.js profile/);
+  assert.match(readme, /node \.\/bin\/blog-writer\.js draft inputs\/draft\.md/);
+  assert.match(readme, /node \.\/bin\/blog-writer\.js cover-prompt outputs\/<slug>/);
+  assert.match(readme, /npm link/);
   assert.match(readme, /outputs\/<slug>\/public/);
   assert.match(readme, /outputs\/<slug>\/work/);
   assert.match(readme, /MVP 제한사항/);

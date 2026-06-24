@@ -14,12 +14,12 @@ Use this checklist after running the Blog Writer CLI. It separates files people 
 ## Commands
 
 ```bash
-blog-writer profile
-blog-writer draft inputs/draft.md
-blog-writer cover-prompt outputs/<slug>
+node ./bin/blog-writer.js profile
+node ./bin/blog-writer.js draft inputs/draft.md
+node ./bin/blog-writer.js cover-prompt outputs/<slug>
 ```
 
-Run `blog-writer profile` again when samples change. Otherwise confirm the existing style files are current before skipping it.
+Run `node ./bin/blog-writer.js profile` again when samples change. Otherwise confirm the existing style files are current before skipping it. Use `blog-writer ...` only after `npm link` or another install step has put the package bin on PATH.
 
 ## Human-Facing Outputs
 

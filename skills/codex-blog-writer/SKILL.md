@@ -15,7 +15,7 @@ Use this skill as a thin wrapper around the Blog Writer CLI. Do not reimplement 
 4. If style files are missing or samples changed, run:
 
 ```bash
-blog-writer profile
+node ./bin/blog-writer.js profile
 ```
 
 ## Input Setup
@@ -41,12 +41,12 @@ Supported image notes:
 Run the commands in this order:
 
 ```bash
-blog-writer profile
-blog-writer draft inputs/draft.md
-blog-writer cover-prompt outputs/<slug>
+node ./bin/blog-writer.js profile
+node ./bin/blog-writer.js draft inputs/draft.md
+node ./bin/blog-writer.js cover-prompt outputs/<slug>
 ```
 
-Skip `blog-writer profile` only when `writer-style/writer-profile.md` and `writer-style/style-rules.md` are already current.
+Skip `node ./bin/blog-writer.js profile` only when `writer-style/writer-profile.md` and `writer-style/style-rules.md` are already current. Use `blog-writer ...` only after `npm link` or another install step has put the package bin on PATH.
 
 ## Review
 
